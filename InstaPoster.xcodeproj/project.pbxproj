@@ -7,6 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A676E70E17F11D810031DAC4 /* BSON_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6D817F11D810031DAC4 /* BSON_Helper.m */; };
+		A676E70F17F11D810031DAC4 /* BSONDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6DC17F11D810031DAC4 /* BSONDecoder.m */; };
+		A676E71017F11D810031DAC4 /* BSONDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6DE17F11D810031DAC4 /* BSONDocument.m */; };
+		A676E71117F11D810031DAC4 /* BSONEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6E017F11D810031DAC4 /* BSONEncoder.m */; };
+		A676E71217F11D810031DAC4 /* BSONIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6E217F11D810031DAC4 /* BSONIterator.m */; };
+		A676E71317F11D810031DAC4 /* BSONTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6E417F11D810031DAC4 /* BSONTypes.m */; };
+		A676E71417F11D810031DAC4 /* NSData+BSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6E617F11D810031DAC4 /* NSData+BSONAdditions.m */; };
+		A676E71517F11D810031DAC4 /* NSDictionary+BSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6E817F11D810031DAC4 /* NSDictionary+BSONAdditions.m */; };
+		A676E71617F11D810031DAC4 /* NSManagedObject+BSONCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6EA17F11D810031DAC4 /* NSManagedObject+BSONCoding.m */; };
+		A676E71717F11D810031DAC4 /* NSString+BSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6EC17F11D810031DAC4 /* NSString+BSONAdditions.m */; };
+		A676E71817F11D810031DAC4 /* ObjCBSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6EE17F11D810031DAC4 /* ObjCBSON.m */; };
+		A676E71917F11D810031DAC4 /* Mongo_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6F117F11D810031DAC4 /* Mongo_Helper.m */; };
+		A676E71A17F11D810031DAC4 /* MongoConnection+Diagnostics.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6F417F11D810031DAC4 /* MongoConnection+Diagnostics.m */; };
+		A676E71B17F11D810031DAC4 /* MongoConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6F617F11D810031DAC4 /* MongoConnection.m */; };
+		A676E71C17F11D810031DAC4 /* MongoCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6F817F11D810031DAC4 /* MongoCursor.m */; };
+		A676E71D17F11D810031DAC4 /* MongoDBCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6FA17F11D810031DAC4 /* MongoDBCollection.m */; };
+		A676E71E17F11D810031DAC4 /* MongoFindRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6FC17F11D810031DAC4 /* MongoFindRequest.m */; };
+		A676E71F17F11D810031DAC4 /* MongoKeyedPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E6FE17F11D810031DAC4 /* MongoKeyedPredicate.m */; };
+		A676E72017F11D810031DAC4 /* MongoPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E70017F11D810031DAC4 /* MongoPredicate.m */; };
+		A676E72117F11D810031DAC4 /* MongoTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E70217F11D810031DAC4 /* MongoTypes.m */; };
+		A676E72217F11D810031DAC4 /* MongoUpdateRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E70417F11D810031DAC4 /* MongoUpdateRequest.m */; };
+		A676E72317F11D810031DAC4 /* MongoWriteConcern.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E70617F11D810031DAC4 /* MongoWriteConcern.m */; };
+		A676E72417F11D810031DAC4 /* NSArray+MongoAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E70817F11D810031DAC4 /* NSArray+MongoAdditions.m */; };
+		A676E72517F11D810031DAC4 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A676E70D17F11D810031DAC4 /* OrderedDictionary.m */; };
+		A676E75017F1258F0031DAC4 /* bcon.c in Sources */ = {isa = PBXBuildFile; fileRef = A676E74817F1258F0031DAC4 /* bcon.c */; };
+		A676E75117F1258F0031DAC4 /* bson.c in Sources */ = {isa = PBXBuildFile; fileRef = A676E74917F1258F0031DAC4 /* bson.c */; };
+		A676E75217F1258F0031DAC4 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = A676E74A17F1258F0031DAC4 /* encoding.c */; };
+		A676E75317F1258F0031DAC4 /* env.c in Sources */ = {isa = PBXBuildFile; fileRef = A676E74B17F1258F0031DAC4 /* env.c */; };
+		A676E75417F1258F0031DAC4 /* gridfs.c in Sources */ = {isa = PBXBuildFile; fileRef = A676E74C17F1258F0031DAC4 /* gridfs.c */; };
+		A676E75517F1258F0031DAC4 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = A676E74D17F1258F0031DAC4 /* md5.c */; };
+		A676E75617F1258F0031DAC4 /* mongo.c in Sources */ = {isa = PBXBuildFile; fileRef = A676E74E17F1258F0031DAC4 /* mongo.c */; };
+		A676E75717F1258F0031DAC4 /* numbers.c in Sources */ = {isa = PBXBuildFile; fileRef = A676E74F17F1258F0031DAC4 /* numbers.c */; };
 		A6D0ECE017EBFCF600583906 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ECDF17EBFCF600583906 /* Foundation.framework */; };
 		A6D0ECE217EBFCF600583906 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ECE117EBFCF600583906 /* CoreGraphics.framework */; };
 		A6D0ECE417EBFCF600583906 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ECE317EBFCF600583906 /* UIKit.framework */; };
@@ -57,6 +89,73 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A676E6D717F11D810031DAC4 /* BSON_Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSON_Helper.h; sourceTree = "<group>"; };
+		A676E6D817F11D810031DAC4 /* BSON_Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSON_Helper.m; sourceTree = "<group>"; };
+		A676E6D917F11D810031DAC4 /* BSON_PrivateInterfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSON_PrivateInterfaces.h; sourceTree = "<group>"; };
+		A676E6DA17F11D810031DAC4 /* BSONCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONCoding.h; sourceTree = "<group>"; };
+		A676E6DB17F11D810031DAC4 /* BSONDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONDecoder.h; sourceTree = "<group>"; };
+		A676E6DC17F11D810031DAC4 /* BSONDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSONDecoder.m; sourceTree = "<group>"; };
+		A676E6DD17F11D810031DAC4 /* BSONDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONDocument.h; sourceTree = "<group>"; };
+		A676E6DE17F11D810031DAC4 /* BSONDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSONDocument.m; sourceTree = "<group>"; };
+		A676E6DF17F11D810031DAC4 /* BSONEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONEncoder.h; sourceTree = "<group>"; };
+		A676E6E017F11D810031DAC4 /* BSONEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSONEncoder.m; sourceTree = "<group>"; };
+		A676E6E117F11D810031DAC4 /* BSONIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONIterator.h; sourceTree = "<group>"; };
+		A676E6E217F11D810031DAC4 /* BSONIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSONIterator.m; sourceTree = "<group>"; };
+		A676E6E317F11D810031DAC4 /* BSONTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONTypes.h; sourceTree = "<group>"; };
+		A676E6E417F11D810031DAC4 /* BSONTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSONTypes.m; sourceTree = "<group>"; };
+		A676E6E517F11D810031DAC4 /* NSData+BSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BSONAdditions.h"; sourceTree = "<group>"; };
+		A676E6E617F11D810031DAC4 /* NSData+BSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+BSONAdditions.m"; sourceTree = "<group>"; };
+		A676E6E717F11D810031DAC4 /* NSDictionary+BSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BSONAdditions.h"; sourceTree = "<group>"; };
+		A676E6E817F11D810031DAC4 /* NSDictionary+BSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BSONAdditions.m"; sourceTree = "<group>"; };
+		A676E6E917F11D810031DAC4 /* NSManagedObject+BSONCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+BSONCoding.h"; sourceTree = "<group>"; };
+		A676E6EA17F11D810031DAC4 /* NSManagedObject+BSONCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+BSONCoding.m"; sourceTree = "<group>"; };
+		A676E6EB17F11D810031DAC4 /* NSString+BSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BSONAdditions.h"; sourceTree = "<group>"; };
+		A676E6EC17F11D810031DAC4 /* NSString+BSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BSONAdditions.m"; sourceTree = "<group>"; };
+		A676E6ED17F11D810031DAC4 /* ObjCBSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCBSON.h; sourceTree = "<group>"; };
+		A676E6EE17F11D810031DAC4 /* ObjCBSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCBSON.m; sourceTree = "<group>"; };
+		A676E6F017F11D810031DAC4 /* Mongo_Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mongo_Helper.h; sourceTree = "<group>"; };
+		A676E6F117F11D810031DAC4 /* Mongo_Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mongo_Helper.m; sourceTree = "<group>"; };
+		A676E6F217F11D810031DAC4 /* Mongo_PrivateInterfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mongo_PrivateInterfaces.h; sourceTree = "<group>"; };
+		A676E6F317F11D810031DAC4 /* MongoConnection+Diagnostics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MongoConnection+Diagnostics.h"; sourceTree = "<group>"; };
+		A676E6F417F11D810031DAC4 /* MongoConnection+Diagnostics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MongoConnection+Diagnostics.m"; sourceTree = "<group>"; };
+		A676E6F517F11D810031DAC4 /* MongoConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoConnection.h; sourceTree = "<group>"; };
+		A676E6F617F11D810031DAC4 /* MongoConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoConnection.m; sourceTree = "<group>"; };
+		A676E6F717F11D810031DAC4 /* MongoCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoCursor.h; sourceTree = "<group>"; };
+		A676E6F817F11D810031DAC4 /* MongoCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoCursor.m; sourceTree = "<group>"; };
+		A676E6F917F11D810031DAC4 /* MongoDBCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoDBCollection.h; sourceTree = "<group>"; };
+		A676E6FA17F11D810031DAC4 /* MongoDBCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoDBCollection.m; sourceTree = "<group>"; };
+		A676E6FB17F11D810031DAC4 /* MongoFindRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoFindRequest.h; sourceTree = "<group>"; };
+		A676E6FC17F11D810031DAC4 /* MongoFindRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoFindRequest.m; sourceTree = "<group>"; };
+		A676E6FD17F11D810031DAC4 /* MongoKeyedPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoKeyedPredicate.h; sourceTree = "<group>"; };
+		A676E6FE17F11D810031DAC4 /* MongoKeyedPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoKeyedPredicate.m; sourceTree = "<group>"; };
+		A676E6FF17F11D810031DAC4 /* MongoPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoPredicate.h; sourceTree = "<group>"; };
+		A676E70017F11D810031DAC4 /* MongoPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoPredicate.m; sourceTree = "<group>"; };
+		A676E70117F11D810031DAC4 /* MongoTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoTypes.h; sourceTree = "<group>"; };
+		A676E70217F11D810031DAC4 /* MongoTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoTypes.m; sourceTree = "<group>"; };
+		A676E70317F11D810031DAC4 /* MongoUpdateRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoUpdateRequest.h; sourceTree = "<group>"; };
+		A676E70417F11D810031DAC4 /* MongoUpdateRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoUpdateRequest.m; sourceTree = "<group>"; };
+		A676E70517F11D810031DAC4 /* MongoWriteConcern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoWriteConcern.h; sourceTree = "<group>"; };
+		A676E70617F11D810031DAC4 /* MongoWriteConcern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoWriteConcern.m; sourceTree = "<group>"; };
+		A676E70717F11D810031DAC4 /* NSArray+MongoAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MongoAdditions.h"; sourceTree = "<group>"; };
+		A676E70817F11D810031DAC4 /* NSArray+MongoAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MongoAdditions.m"; sourceTree = "<group>"; };
+		A676E70917F11D810031DAC4 /* ObjCMongoDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCMongoDB.h; sourceTree = "<group>"; };
+		A676E70C17F11D810031DAC4 /* OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedDictionary.h; sourceTree = "<group>"; };
+		A676E70D17F11D810031DAC4 /* OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedDictionary.m; sourceTree = "<group>"; };
+		A676E74117F1246C0031DAC4 /* bcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bcon.h; sourceTree = "<group>"; };
+		A676E74217F1246C0031DAC4 /* bson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bson.h; sourceTree = "<group>"; };
+		A676E74317F1246C0031DAC4 /* encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encoding.h; sourceTree = "<group>"; };
+		A676E74417F1246C0031DAC4 /* env.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = env.h; sourceTree = "<group>"; };
+		A676E74517F1246C0031DAC4 /* gridfs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gridfs.h; sourceTree = "<group>"; };
+		A676E74617F1246C0031DAC4 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		A676E74717F1246C0031DAC4 /* mongo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongo.h; sourceTree = "<group>"; };
+		A676E74817F1258F0031DAC4 /* bcon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bcon.c; sourceTree = "<group>"; };
+		A676E74917F1258F0031DAC4 /* bson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bson.c; sourceTree = "<group>"; };
+		A676E74A17F1258F0031DAC4 /* encoding.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encoding.c; sourceTree = "<group>"; };
+		A676E74B17F1258F0031DAC4 /* env.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = env.c; sourceTree = "<group>"; };
+		A676E74C17F1258F0031DAC4 /* gridfs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gridfs.c; sourceTree = "<group>"; };
+		A676E74D17F1258F0031DAC4 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		A676E74E17F1258F0031DAC4 /* mongo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mongo.c; sourceTree = "<group>"; };
+		A676E74F17F1258F0031DAC4 /* numbers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = numbers.c; sourceTree = "<group>"; };
 		A6D0ECDC17EBFCF600583906 /* InstaPoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaPoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D0ECDF17EBFCF600583906 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A6D0ECE117EBFCF600583906 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -135,6 +234,112 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A676E6D517F11D410031DAC4 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				A676E6D617F11D810031DAC4 /* BSON */,
+				A676E6EF17F11D810031DAC4 /* Mongo */,
+				A676E70A17F11D810031DAC4 /* mongo-c-driver */,
+				A676E70B17F11D810031DAC4 /* OrderedDictionary */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		A676E6D617F11D810031DAC4 /* BSON */ = {
+			isa = PBXGroup;
+			children = (
+				A676E6D717F11D810031DAC4 /* BSON_Helper.h */,
+				A676E6D817F11D810031DAC4 /* BSON_Helper.m */,
+				A676E6D917F11D810031DAC4 /* BSON_PrivateInterfaces.h */,
+				A676E6DA17F11D810031DAC4 /* BSONCoding.h */,
+				A676E6DB17F11D810031DAC4 /* BSONDecoder.h */,
+				A676E6DC17F11D810031DAC4 /* BSONDecoder.m */,
+				A676E6DD17F11D810031DAC4 /* BSONDocument.h */,
+				A676E6DE17F11D810031DAC4 /* BSONDocument.m */,
+				A676E6DF17F11D810031DAC4 /* BSONEncoder.h */,
+				A676E6E017F11D810031DAC4 /* BSONEncoder.m */,
+				A676E6E117F11D810031DAC4 /* BSONIterator.h */,
+				A676E6E217F11D810031DAC4 /* BSONIterator.m */,
+				A676E6E317F11D810031DAC4 /* BSONTypes.h */,
+				A676E6E417F11D810031DAC4 /* BSONTypes.m */,
+				A676E6E517F11D810031DAC4 /* NSData+BSONAdditions.h */,
+				A676E6E617F11D810031DAC4 /* NSData+BSONAdditions.m */,
+				A676E6E717F11D810031DAC4 /* NSDictionary+BSONAdditions.h */,
+				A676E6E817F11D810031DAC4 /* NSDictionary+BSONAdditions.m */,
+				A676E6E917F11D810031DAC4 /* NSManagedObject+BSONCoding.h */,
+				A676E6EA17F11D810031DAC4 /* NSManagedObject+BSONCoding.m */,
+				A676E6EB17F11D810031DAC4 /* NSString+BSONAdditions.h */,
+				A676E6EC17F11D810031DAC4 /* NSString+BSONAdditions.m */,
+				A676E6ED17F11D810031DAC4 /* ObjCBSON.h */,
+				A676E6EE17F11D810031DAC4 /* ObjCBSON.m */,
+			);
+			path = BSON;
+			sourceTree = "<group>";
+		};
+		A676E6EF17F11D810031DAC4 /* Mongo */ = {
+			isa = PBXGroup;
+			children = (
+				A676E6F017F11D810031DAC4 /* Mongo_Helper.h */,
+				A676E6F117F11D810031DAC4 /* Mongo_Helper.m */,
+				A676E6F217F11D810031DAC4 /* Mongo_PrivateInterfaces.h */,
+				A676E6F317F11D810031DAC4 /* MongoConnection+Diagnostics.h */,
+				A676E6F417F11D810031DAC4 /* MongoConnection+Diagnostics.m */,
+				A676E6F517F11D810031DAC4 /* MongoConnection.h */,
+				A676E6F617F11D810031DAC4 /* MongoConnection.m */,
+				A676E6F717F11D810031DAC4 /* MongoCursor.h */,
+				A676E6F817F11D810031DAC4 /* MongoCursor.m */,
+				A676E6F917F11D810031DAC4 /* MongoDBCollection.h */,
+				A676E6FA17F11D810031DAC4 /* MongoDBCollection.m */,
+				A676E6FB17F11D810031DAC4 /* MongoFindRequest.h */,
+				A676E6FC17F11D810031DAC4 /* MongoFindRequest.m */,
+				A676E6FD17F11D810031DAC4 /* MongoKeyedPredicate.h */,
+				A676E6FE17F11D810031DAC4 /* MongoKeyedPredicate.m */,
+				A676E6FF17F11D810031DAC4 /* MongoPredicate.h */,
+				A676E70017F11D810031DAC4 /* MongoPredicate.m */,
+				A676E70117F11D810031DAC4 /* MongoTypes.h */,
+				A676E70217F11D810031DAC4 /* MongoTypes.m */,
+				A676E70317F11D810031DAC4 /* MongoUpdateRequest.h */,
+				A676E70417F11D810031DAC4 /* MongoUpdateRequest.m */,
+				A676E70517F11D810031DAC4 /* MongoWriteConcern.h */,
+				A676E70617F11D810031DAC4 /* MongoWriteConcern.m */,
+				A676E70717F11D810031DAC4 /* NSArray+MongoAdditions.h */,
+				A676E70817F11D810031DAC4 /* NSArray+MongoAdditions.m */,
+				A676E70917F11D810031DAC4 /* ObjCMongoDB.h */,
+			);
+			path = Mongo;
+			sourceTree = "<group>";
+		};
+		A676E70A17F11D810031DAC4 /* mongo-c-driver */ = {
+			isa = PBXGroup;
+			children = (
+				A676E74817F1258F0031DAC4 /* bcon.c */,
+				A676E74917F1258F0031DAC4 /* bson.c */,
+				A676E74A17F1258F0031DAC4 /* encoding.c */,
+				A676E74B17F1258F0031DAC4 /* env.c */,
+				A676E74C17F1258F0031DAC4 /* gridfs.c */,
+				A676E74D17F1258F0031DAC4 /* md5.c */,
+				A676E74E17F1258F0031DAC4 /* mongo.c */,
+				A676E74F17F1258F0031DAC4 /* numbers.c */,
+				A676E74117F1246C0031DAC4 /* bcon.h */,
+				A676E74217F1246C0031DAC4 /* bson.h */,
+				A676E74317F1246C0031DAC4 /* encoding.h */,
+				A676E74417F1246C0031DAC4 /* env.h */,
+				A676E74517F1246C0031DAC4 /* gridfs.h */,
+				A676E74617F1246C0031DAC4 /* md5.h */,
+				A676E74717F1246C0031DAC4 /* mongo.h */,
+			);
+			path = "mongo-c-driver";
+			sourceTree = "<group>";
+		};
+		A676E70B17F11D810031DAC4 /* OrderedDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				A676E70C17F11D810031DAC4 /* OrderedDictionary.h */,
+				A676E70D17F11D810031DAC4 /* OrderedDictionary.m */,
+			);
+			path = OrderedDictionary;
+			sourceTree = "<group>";
+		};
 		A6D0ECD317EBFCF600583906 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +382,7 @@
 		A6D0ECE517EBFCF600583906 /* InstaPoster */ = {
 			isa = PBXGroup;
 			children = (
+				A676E6D517F11D410031DAC4 /* Vendor */,
 				A6D0ECEE17EBFCF600583906 /* AppDelegate.h */,
 				A6D0ECEF17EBFCF600583906 /* AppDelegate.m */,
 				A6D0ECF117EBFCF600583906 /* Main.storyboard */,
@@ -385,9 +591,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A676E75717F1258F0031DAC4 /* numbers.c in Sources */,
+				A676E75517F1258F0031DAC4 /* md5.c in Sources */,
+				A676E72517F11D810031DAC4 /* OrderedDictionary.m in Sources */,
+				A676E71517F11D810031DAC4 /* NSDictionary+BSONAdditions.m in Sources */,
+				A676E75317F1258F0031DAC4 /* env.c in Sources */,
+				A676E71917F11D810031DAC4 /* Mongo_Helper.m in Sources */,
+				A676E71B17F11D810031DAC4 /* MongoConnection.m in Sources */,
+				A676E72217F11D810031DAC4 /* MongoUpdateRequest.m in Sources */,
+				A676E71D17F11D810031DAC4 /* MongoDBCollection.m in Sources */,
+				A676E75217F1258F0031DAC4 /* encoding.c in Sources */,
 				A6D0ECF617EBFCF600583906 /* ViewController.m in Sources */,
+				A676E75617F1258F0031DAC4 /* mongo.c in Sources */,
+				A676E75117F1258F0031DAC4 /* bson.c in Sources */,
+				A676E70E17F11D810031DAC4 /* BSON_Helper.m in Sources */,
+				A676E71117F11D810031DAC4 /* BSONEncoder.m in Sources */,
 				A6D0ECF017EBFCF600583906 /* AppDelegate.m in Sources */,
+				A676E72417F11D810031DAC4 /* NSArray+MongoAdditions.m in Sources */,
+				A676E71617F11D810031DAC4 /* NSManagedObject+BSONCoding.m in Sources */,
+				A676E71C17F11D810031DAC4 /* MongoCursor.m in Sources */,
+				A676E75017F1258F0031DAC4 /* bcon.c in Sources */,
+				A676E71417F11D810031DAC4 /* NSData+BSONAdditions.m in Sources */,
+				A676E70F17F11D810031DAC4 /* BSONDecoder.m in Sources */,
+				A676E71217F11D810031DAC4 /* BSONIterator.m in Sources */,
+				A676E72317F11D810031DAC4 /* MongoWriteConcern.m in Sources */,
+				A676E71017F11D810031DAC4 /* BSONDocument.m in Sources */,
+				A676E72117F11D810031DAC4 /* MongoTypes.m in Sources */,
+				A676E71F17F11D810031DAC4 /* MongoKeyedPredicate.m in Sources */,
+				A676E75417F1258F0031DAC4 /* gridfs.c in Sources */,
+				A676E71A17F11D810031DAC4 /* MongoConnection+Diagnostics.m in Sources */,
 				A6D0ECEC17EBFCF600583906 /* main.mm in Sources */,
+				A676E71817F11D810031DAC4 /* ObjCBSON.m in Sources */,
+				A676E71717F11D810031DAC4 /* NSString+BSONAdditions.m in Sources */,
+				A676E71317F11D810031DAC4 /* BSONTypes.m in Sources */,
+				A676E72017F11D810031DAC4 /* MongoPredicate.m in Sources */,
+				A676E71E17F11D810031DAC4 /* MongoFindRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +768,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/pmark/Projects/CSD/InstaPoster/3DAR/Lib,
+					"/Users/pmark/Projects/CSD/InstaPoster/InstaPoster/Vendor/mongo-c-driver",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -563,6 +802,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/pmark/Projects/CSD/InstaPoster/3DAR/Lib,
+					"/Users/pmark/Projects/CSD/InstaPoster/InstaPoster/Vendor/mongo-c-driver",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
