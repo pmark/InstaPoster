@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6D0ECE017EBFCF600583906 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ECDF17EBFCF600583906 /* Foundation.framework */; };
+		A6D0ECE217EBFCF600583906 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ECE117EBFCF600583906 /* CoreGraphics.framework */; };
+		A6D0ECE417EBFCF600583906 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ECE317EBFCF600583906 /* UIKit.framework */; };
+		A6D0ECEA17EBFCF600583906 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ECE817EBFCF600583906 /* InfoPlist.strings */; };
+		A6D0ECEC17EBFCF600583906 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = A6D0ECEB17EBFCF600583906 /* main.mm */; };
+		A6D0ECF017EBFCF600583906 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D0ECEF17EBFCF600583906 /* AppDelegate.m */; };
+		A6D0ECF317EBFCF600583906 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ECF117EBFCF600583906 /* Main.storyboard */; };
+		A6D0ECF617EBFCF600583906 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D0ECF517EBFCF600583906 /* ViewController.m */; };
+		A6D0ECF817EBFCF600583906 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ECF717EBFCF600583906 /* Images.xcassets */; };
+		A6D0ECFF17EBFCF600583906 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ECFE17EBFCF600583906 /* XCTest.framework */; };
+		A6D0ED0017EBFCF600583906 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ECDF17EBFCF600583906 /* Foundation.framework */; };
+		A6D0ED0117EBFCF600583906 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ECE317EBFCF600583906 /* UIKit.framework */; };
+		A6D0ED0917EBFCF600583906 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ED0717EBFCF600583906 /* InfoPlist.strings */; };
+		A6D0ED0B17EBFCF600583906 /* InstaPosterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D0ED0A17EBFCF600583906 /* InstaPosterTests.m */; };
+		A6D0ED1517EBFE0900583906 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ED1417EBFE0900583906 /* MapKit.framework */; };
+		A6D0ED2C17EC004800583906 /* 3dar.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ED1717EC004800583906 /* 3dar.plist */; };
+		A6D0ED2D17EC004800583906 /* 3dar_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ED1A17EC004800583906 /* 3dar_logo.png */; };
+		A6D0ED2E17EC004800583906 /* 3dar_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ED1B17EC004800583906 /* 3dar_logo@2x.png */; };
+		A6D0ED2F17EC004800583906 /* 3dar_marker_icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ED1C17EC004800583906 /* 3dar_marker_icon1.png */; };
+		A6D0ED3017EC004800583906 /* 3dar_marker_icon1_focused.png in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ED1D17EC004800583906 /* 3dar_marker_icon1_focused.png */; };
+		A6D0ED3117EC004800583906 /* 3dar_pano_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ED1E17EC004800583906 /* 3dar_pano_bg.png */; };
+		A6D0ED3217EC004800583906 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ED1F17EC004800583906 /* bubble.png */; };
+		A6D0ED3317EC004800583906 /* powered_by_3dar_310x50.png in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ED2017EC004800583906 /* powered_by_3dar_310x50.png */; };
+		A6D0ED3417EC004800583906 /* powered_by_3dar_310x50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ED2117EC004800583906 /* powered_by_3dar_310x50@2x.png */; };
+		A6D0ED3517EC004800583906 /* cube.obj in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ED2317EC004800583906 /* cube.obj */; };
+		A6D0ED3617EC004800583906 /* moebius.obj in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ED2417EC004800583906 /* moebius.obj */; };
+		A6D0ED3717EC004800583906 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ED2517EC004800583906 /* sphere.obj */; };
+		A6D0ED3817EC004800583906 /* star.obj in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ED2617EC004800583906 /* star.obj */; };
+		A6D0ED3917EC004800583906 /* ufo.obj in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ED2717EC004800583906 /* ufo.obj */; };
+		A6D0ED3B17EC004800583906 /* SM3DAR_keys.txt in Resources */ = {isa = PBXBuildFile; fileRef = A6D0ED2B17EC004800583906 /* SM3DAR_keys.txt */; };
+		A6D0ED4017EC00A000583906 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ED3E17EC00A000583906 /* CoreLocation.framework */; };
+		A6D0ED4117EC00A000583906 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ED3F17EC00A000583906 /* CoreMotion.framework */; };
+		A6D0ED4317EC00AA00583906 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ED4217EC00AA00583906 /* QuartzCore.framework */; };
+		A6D0ED4517EC00B500583906 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ED4417EC00B400583906 /* OpenGLES.framework */; };
+		A6D0ED4917EC03E600583906 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ED4817EC03E600583906 /* libstdc++.dylib */; };
+		A6D0ED4B17EC041300583906 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ED4A17EC041300583906 /* AVFoundation.framework */; };
+		A6D0ED4D17EC066600583906 /* lib3DAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ED4C17EC066600583906 /* lib3DAR.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6D0ED0217EBFCF600583906 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6D0ECD417EBFCF600583906 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6D0ECDB17EBFCF600583906;
+			remoteInfo = InstaPoster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6D0ECDC17EBFCF600583906 /* InstaPoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaPoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6D0ECDF17EBFCF600583906 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A6D0ECE117EBFCF600583906 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A6D0ECE317EBFCF600583906 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A6D0ECE717EBFCF600583906 /* InstaPoster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstaPoster-Info.plist"; sourceTree = "<group>"; };
+		A6D0ECE917EBFCF600583906 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A6D0ECEB17EBFCF600583906 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		A6D0ECED17EBFCF600583906 /* InstaPoster-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstaPoster-Prefix.pch"; sourceTree = "<group>"; };
+		A6D0ECEE17EBFCF600583906 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A6D0ECEF17EBFCF600583906 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A6D0ECF217EBFCF600583906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6D0ECF417EBFCF600583906 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A6D0ECF517EBFCF600583906 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A6D0ECF717EBFCF600583906 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A6D0ECFD17EBFCF600583906 /* InstaPosterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaPosterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6D0ECFE17EBFCF600583906 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A6D0ED0617EBFCF600583906 /* InstaPosterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstaPosterTests-Info.plist"; sourceTree = "<group>"; };
+		A6D0ED0817EBFCF600583906 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A6D0ED0A17EBFCF600583906 /* InstaPosterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaPosterTests.m; sourceTree = "<group>"; };
+		A6D0ED1417EBFE0900583906 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A6D0ED1717EC004800583906 /* 3dar.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3dar.plist; sourceTree = "<group>"; };
+		A6D0ED1A17EC004800583906 /* 3dar_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_logo.png; sourceTree = "<group>"; };
+		A6D0ED1B17EC004800583906 /* 3dar_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3dar_logo@2x.png"; sourceTree = "<group>"; };
+		A6D0ED1C17EC004800583906 /* 3dar_marker_icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_marker_icon1.png; sourceTree = "<group>"; };
+		A6D0ED1D17EC004800583906 /* 3dar_marker_icon1_focused.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_marker_icon1_focused.png; sourceTree = "<group>"; };
+		A6D0ED1E17EC004800583906 /* 3dar_pano_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_pano_bg.png; sourceTree = "<group>"; };
+		A6D0ED1F17EC004800583906 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
+		A6D0ED2017EC004800583906 /* powered_by_3dar_310x50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = powered_by_3dar_310x50.png; sourceTree = "<group>"; };
+		A6D0ED2117EC004800583906 /* powered_by_3dar_310x50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "powered_by_3dar_310x50@2x.png"; sourceTree = "<group>"; };
+		A6D0ED2317EC004800583906 /* cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.obj; sourceTree = "<group>"; };
+		A6D0ED2417EC004800583906 /* moebius.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moebius.obj; sourceTree = "<group>"; };
+		A6D0ED2517EC004800583906 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
+		A6D0ED2617EC004800583906 /* star.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = star.obj; sourceTree = "<group>"; };
+		A6D0ED2717EC004800583906 /* ufo.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufo.obj; sourceTree = "<group>"; };
+		A6D0ED2A17EC004800583906 /* SM3DAR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SM3DAR.h; sourceTree = "<group>"; };
+		A6D0ED2B17EC004800583906 /* SM3DAR_keys.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SM3DAR_keys.txt; sourceTree = "<group>"; };
+		A6D0ED3E17EC00A000583906 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A6D0ED3F17EC00A000583906 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A6D0ED4217EC00AA00583906 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A6D0ED4417EC00B400583906 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A6D0ED4617EC03D600583906 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A6D0ED4817EC03E600583906 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		A6D0ED4A17EC041300583906 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A6D0ED4C17EC066600583906 /* lib3DAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = lib3DAR.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6D0ECD917EBFCF600583906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D0ED4B17EC041300583906 /* AVFoundation.framework in Frameworks */,
+				A6D0ED4917EC03E600583906 /* libstdc++.dylib in Frameworks */,
+				A6D0ED4D17EC066600583906 /* lib3DAR.a in Frameworks */,
+				A6D0ED4517EC00B500583906 /* OpenGLES.framework in Frameworks */,
+				A6D0ED4317EC00AA00583906 /* QuartzCore.framework in Frameworks */,
+				A6D0ED4017EC00A000583906 /* CoreLocation.framework in Frameworks */,
+				A6D0ED4117EC00A000583906 /* CoreMotion.framework in Frameworks */,
+				A6D0ED1517EBFE0900583906 /* MapKit.framework in Frameworks */,
+				A6D0ECE217EBFCF600583906 /* CoreGraphics.framework in Frameworks */,
+				A6D0ECE417EBFCF600583906 /* UIKit.framework in Frameworks */,
+				A6D0ECE017EBFCF600583906 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D0ECFA17EBFCF600583906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D0ECFF17EBFCF600583906 /* XCTest.framework in Frameworks */,
+				A6D0ED0117EBFCF600583906 /* UIKit.framework in Frameworks */,
+				A6D0ED0017EBFCF600583906 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6D0ECD317EBFCF600583906 = {
+			isa = PBXGroup;
+			children = (
+				A6D0ED1617EC004800583906 /* 3DAR */,
+				A6D0ECE517EBFCF600583906 /* InstaPoster */,
+				A6D0ED0417EBFCF600583906 /* InstaPosterTests */,
+				A6D0ECDE17EBFCF600583906 /* Frameworks */,
+				A6D0ECDD17EBFCF600583906 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6D0ECDD17EBFCF600583906 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6D0ECDC17EBFCF600583906 /* InstaPoster.app */,
+				A6D0ECFD17EBFCF600583906 /* InstaPosterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6D0ECDE17EBFCF600583906 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6D0ED4A17EC041300583906 /* AVFoundation.framework */,
+				A6D0ED4817EC03E600583906 /* libstdc++.dylib */,
+				A6D0ED4617EC03D600583906 /* libz.dylib */,
+				A6D0ED4417EC00B400583906 /* OpenGLES.framework */,
+				A6D0ED4217EC00AA00583906 /* QuartzCore.framework */,
+				A6D0ED3E17EC00A000583906 /* CoreLocation.framework */,
+				A6D0ED3F17EC00A000583906 /* CoreMotion.framework */,
+				A6D0ED1417EBFE0900583906 /* MapKit.framework */,
+				A6D0ECDF17EBFCF600583906 /* Foundation.framework */,
+				A6D0ECE117EBFCF600583906 /* CoreGraphics.framework */,
+				A6D0ECE317EBFCF600583906 /* UIKit.framework */,
+				A6D0ECFE17EBFCF600583906 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6D0ECE517EBFCF600583906 /* InstaPoster */ = {
+			isa = PBXGroup;
+			children = (
+				A6D0ECEE17EBFCF600583906 /* AppDelegate.h */,
+				A6D0ECEF17EBFCF600583906 /* AppDelegate.m */,
+				A6D0ECF117EBFCF600583906 /* Main.storyboard */,
+				A6D0ECF417EBFCF600583906 /* ViewController.h */,
+				A6D0ECF517EBFCF600583906 /* ViewController.m */,
+				A6D0ECF717EBFCF600583906 /* Images.xcassets */,
+				A6D0ECE617EBFCF600583906 /* Supporting Files */,
+			);
+			path = InstaPoster;
+			sourceTree = "<group>";
+		};
+		A6D0ECE617EBFCF600583906 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6D0ECE717EBFCF600583906 /* InstaPoster-Info.plist */,
+				A6D0ECE817EBFCF600583906 /* InfoPlist.strings */,
+				A6D0ECEB17EBFCF600583906 /* main.mm */,
+				A6D0ECED17EBFCF600583906 /* InstaPoster-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6D0ED0417EBFCF600583906 /* InstaPosterTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6D0ED0A17EBFCF600583906 /* InstaPosterTests.m */,
+				A6D0ED0517EBFCF600583906 /* Supporting Files */,
+			);
+			path = InstaPosterTests;
+			sourceTree = "<group>";
+		};
+		A6D0ED0517EBFCF600583906 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6D0ED0617EBFCF600583906 /* InstaPosterTests-Info.plist */,
+				A6D0ED0717EBFCF600583906 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6D0ED1617EC004800583906 /* 3DAR */ = {
+			isa = PBXGroup;
+			children = (
+				A6D0ED1717EC004800583906 /* 3dar.plist */,
+				A6D0ED1817EC004800583906 /* assets */,
+				A6D0ED2817EC004800583906 /* Lib */,
+				A6D0ED2A17EC004800583906 /* SM3DAR.h */,
+				A6D0ED2B17EC004800583906 /* SM3DAR_keys.txt */,
+			);
+			path = 3DAR;
+			sourceTree = "<group>";
+		};
+		A6D0ED1817EC004800583906 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				A6D0ED1917EC004800583906 /* images */,
+				A6D0ED2217EC004800583906 /* models */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		A6D0ED1917EC004800583906 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A6D0ED1A17EC004800583906 /* 3dar_logo.png */,
+				A6D0ED1B17EC004800583906 /* 3dar_logo@2x.png */,
+				A6D0ED1C17EC004800583906 /* 3dar_marker_icon1.png */,
+				A6D0ED1D17EC004800583906 /* 3dar_marker_icon1_focused.png */,
+				A6D0ED1E17EC004800583906 /* 3dar_pano_bg.png */,
+				A6D0ED1F17EC004800583906 /* bubble.png */,
+				A6D0ED2017EC004800583906 /* powered_by_3dar_310x50.png */,
+				A6D0ED2117EC004800583906 /* powered_by_3dar_310x50@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		A6D0ED2217EC004800583906 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A6D0ED2317EC004800583906 /* cube.obj */,
+				A6D0ED2417EC004800583906 /* moebius.obj */,
+				A6D0ED2517EC004800583906 /* sphere.obj */,
+				A6D0ED2617EC004800583906 /* star.obj */,
+				A6D0ED2717EC004800583906 /* ufo.obj */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		A6D0ED2817EC004800583906 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				A6D0ED4C17EC066600583906 /* lib3DAR.a */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6D0ECDB17EBFCF600583906 /* InstaPoster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6D0ED0E17EBFCF600583906 /* Build configuration list for PBXNativeTarget "InstaPoster" */;
+			buildPhases = (
+				A6D0ECD817EBFCF600583906 /* Sources */,
+				A6D0ECD917EBFCF600583906 /* Frameworks */,
+				A6D0ECDA17EBFCF600583906 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstaPoster;
+			productName = InstaPoster;
+			productReference = A6D0ECDC17EBFCF600583906 /* InstaPoster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6D0ECFC17EBFCF600583906 /* InstaPosterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6D0ED1117EBFCF600583906 /* Build configuration list for PBXNativeTarget "InstaPosterTests" */;
+			buildPhases = (
+				A6D0ECF917EBFCF600583906 /* Sources */,
+				A6D0ECFA17EBFCF600583906 /* Frameworks */,
+				A6D0ECFB17EBFCF600583906 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6D0ED0317EBFCF600583906 /* PBXTargetDependency */,
+			);
+			name = InstaPosterTests;
+			productName = InstaPosterTests;
+			productReference = A6D0ECFD17EBFCF600583906 /* InstaPosterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6D0ECD417EBFCF600583906 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Steinbacher Design";
+				TargetAttributes = {
+					A6D0ECFC17EBFCF600583906 = {
+						TestTargetID = A6D0ECDB17EBFCF600583906;
+					};
+				};
+			};
+			buildConfigurationList = A6D0ECD717EBFCF600583906 /* Build configuration list for PBXProject "InstaPoster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6D0ECD317EBFCF600583906;
+			productRefGroup = A6D0ECDD17EBFCF600583906 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6D0ECDB17EBFCF600583906 /* InstaPoster */,
+				A6D0ECFC17EBFCF600583906 /* InstaPosterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6D0ECDA17EBFCF600583906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D0ED3B17EC004800583906 /* SM3DAR_keys.txt in Resources */,
+				A6D0ECF817EBFCF600583906 /* Images.xcassets in Resources */,
+				A6D0ECEA17EBFCF600583906 /* InfoPlist.strings in Resources */,
+				A6D0ED3617EC004800583906 /* moebius.obj in Resources */,
+				A6D0ED2C17EC004800583906 /* 3dar.plist in Resources */,
+				A6D0ED3717EC004800583906 /* sphere.obj in Resources */,
+				A6D0ED3517EC004800583906 /* cube.obj in Resources */,
+				A6D0ED2E17EC004800583906 /* 3dar_logo@2x.png in Resources */,
+				A6D0ED3017EC004800583906 /* 3dar_marker_icon1_focused.png in Resources */,
+				A6D0ED3117EC004800583906 /* 3dar_pano_bg.png in Resources */,
+				A6D0ED3317EC004800583906 /* powered_by_3dar_310x50.png in Resources */,
+				A6D0ED2F17EC004800583906 /* 3dar_marker_icon1.png in Resources */,
+				A6D0ED3817EC004800583906 /* star.obj in Resources */,
+				A6D0ED3217EC004800583906 /* bubble.png in Resources */,
+				A6D0ECF317EBFCF600583906 /* Main.storyboard in Resources */,
+				A6D0ED3917EC004800583906 /* ufo.obj in Resources */,
+				A6D0ED2D17EC004800583906 /* 3dar_logo.png in Resources */,
+				A6D0ED3417EC004800583906 /* powered_by_3dar_310x50@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D0ECFB17EBFCF600583906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D0ED0917EBFCF600583906 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6D0ECD817EBFCF600583906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D0ECF617EBFCF600583906 /* ViewController.m in Sources */,
+				A6D0ECF017EBFCF600583906 /* AppDelegate.m in Sources */,
+				A6D0ECEC17EBFCF600583906 /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6D0ECF917EBFCF600583906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6D0ED0B17EBFCF600583906 /* InstaPosterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6D0ED0317EBFCF600583906 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6D0ECDB17EBFCF600583906 /* InstaPoster */;
+			targetProxy = A6D0ED0217EBFCF600583906 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6D0ECE817EBFCF600583906 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6D0ECE917EBFCF600583906 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A6D0ECF117EBFCF600583906 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6D0ECF217EBFCF600583906 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6D0ED0717EBFCF600583906 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6D0ED0817EBFCF600583906 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6D0ED0C17EBFCF600583906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A6D0ED0D17EBFCF600583906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6D0ED0F17EBFCF600583906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaPoster/InstaPoster-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "InstaPoster/InstaPoster-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/pmark/Projects/CSD/InstaPoster/3DAR/Lib,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+					"-lxml2",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A6D0ED1017EBFCF600583906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaPoster/InstaPoster-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "InstaPoster/InstaPoster-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/pmark/Projects/CSD/InstaPoster/3DAR/Lib,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lstdc++",
+					"-lxml2",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A6D0ED1217EBFCF600583906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InstaPoster.app/InstaPoster";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaPoster/InstaPoster-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "InstaPosterTests/InstaPosterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A6D0ED1317EBFCF600583906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InstaPoster.app/InstaPoster";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaPoster/InstaPoster-Prefix.pch";
+				INFOPLIST_FILE = "InstaPosterTests/InstaPosterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6D0ECD717EBFCF600583906 /* Build configuration list for PBXProject "InstaPoster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6D0ED0C17EBFCF600583906 /* Debug */,
+				A6D0ED0D17EBFCF600583906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6D0ED0E17EBFCF600583906 /* Build configuration list for PBXNativeTarget "InstaPoster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6D0ED0F17EBFCF600583906 /* Debug */,
+				A6D0ED1017EBFCF600583906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6D0ED1117EBFCF600583906 /* Build configuration list for PBXNativeTarget "InstaPosterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6D0ED1217EBFCF600583906 /* Debug */,
+				A6D0ED1317EBFCF600583906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6D0ECD417EBFCF600583906 /* Project object */;
+}
