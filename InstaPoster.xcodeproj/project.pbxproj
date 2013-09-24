@@ -39,6 +39,8 @@
 		A676E75517F1258F0031DAC4 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = A676E74D17F1258F0031DAC4 /* md5.c */; };
 		A676E75617F1258F0031DAC4 /* mongo.c in Sources */ = {isa = PBXBuildFile; fileRef = A676E74E17F1258F0031DAC4 /* mongo.c */; };
 		A676E75717F1258F0031DAC4 /* numbers.c in Sources */ = {isa = PBXBuildFile; fileRef = A676E74F17F1258F0031DAC4 /* numbers.c */; };
+		A676E75917F13D2C0031DAC4 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A676E75817F13D2C0031DAC4 /* SDWebImage.framework */; };
+		A676E75B17F13E530031DAC4 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A676E75A17F13E530031DAC4 /* ImageIO.framework */; };
 		A6D0ECE017EBFCF600583906 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ECDF17EBFCF600583906 /* Foundation.framework */; };
 		A6D0ECE217EBFCF600583906 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ECE117EBFCF600583906 /* CoreGraphics.framework */; };
 		A6D0ECE417EBFCF600583906 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D0ECE317EBFCF600583906 /* UIKit.framework */; };
@@ -156,6 +158,8 @@
 		A676E74D17F1258F0031DAC4 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
 		A676E74E17F1258F0031DAC4 /* mongo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mongo.c; sourceTree = "<group>"; };
 		A676E74F17F1258F0031DAC4 /* numbers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = numbers.c; sourceTree = "<group>"; };
+		A676E75817F13D2C0031DAC4 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
+		A676E75A17F13E530031DAC4 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		A6D0ECDC17EBFCF600583906 /* InstaPoster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaPoster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D0ECDF17EBFCF600583906 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A6D0ECE117EBFCF600583906 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -207,10 +211,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A676E75B17F13E530031DAC4 /* ImageIO.framework in Frameworks */,
 				A6D0ED4B17EC041300583906 /* AVFoundation.framework in Frameworks */,
 				A6D0ED4917EC03E600583906 /* libstdc++.dylib in Frameworks */,
 				A6D0ED4D17EC066600583906 /* lib3DAR.a in Frameworks */,
 				A6D0ED4517EC00B500583906 /* OpenGLES.framework in Frameworks */,
+				A676E75917F13D2C0031DAC4 /* SDWebImage.framework in Frameworks */,
 				A6D0ED4317EC00AA00583906 /* QuartzCore.framework in Frameworks */,
 				A6D0ED4017EC00A000583906 /* CoreLocation.framework in Frameworks */,
 				A6D0ED4117EC00A000583906 /* CoreMotion.framework in Frameworks */,
@@ -363,6 +369,8 @@
 		A6D0ECDE17EBFCF600583906 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A676E75A17F13E530031DAC4 /* ImageIO.framework */,
+				A676E75817F13D2C0031DAC4 /* SDWebImage.framework */,
 				A6D0ED4A17EC041300583906 /* AVFoundation.framework */,
 				A6D0ED4817EC03E600583906 /* libstdc++.dylib */,
 				A6D0ED4617EC03D600583906 /* libz.dylib */,
@@ -755,6 +763,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/pmark/Projects/CSD/InstaPoster,
+				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InstaPoster/InstaPoster-Prefix.pch";
@@ -789,6 +801,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/pmark/Projects/CSD/InstaPoster,
+				);
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InstaPoster/InstaPoster-Prefix.pch";

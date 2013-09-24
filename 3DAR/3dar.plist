@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>3darAutofocusPoi</key>
-	<true/>
+	<false/>
 	<key>3darDisableLocationServices</key>
 	<false/>
 	<key>3darDrawGroundplaneGrid</key>

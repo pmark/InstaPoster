@@ -11,6 +11,7 @@
 #import "MongoConnection.h"
 #import "MongoDBCollection.h"
 #import "MongoKeyedPredicate.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @interface ViewController ()
 
@@ -38,6 +39,13 @@
 #endif
     
     [self getPost];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self.mapView.sm3dar startCamera];
 }
 
 - (void)mongoSetup
@@ -107,6 +115,101 @@
         NSDictionary *result = [BSONDecoder decodeDictionaryWithDocument:resultDoc];
         NSLog(@"fetch result: %@", result);
     }
+}
+
+- (NSArray*)fetchAllPosts
+{
+    NSError *error = nil;
+    MongoKeyedPredicate *predicate = [MongoKeyedPredicate predicate];
+    [predicate keyPath:@"name" matches:@"test"];
+    NSArray *results = [self.mongoCollection findAllWithError:&error];
+    NSMutableArray *posts = [NSMutableArray arrayWithCapacity:[results count]];
+    
+    if (error)
+    {
+        NSLog(@"Error fetching posts: %@", error);
+    }
+    else
+    {
+        NSLog(@"Fetch results: %i", [results count]);
+        
+        for (BSONDocument *doc in results)
+        {
+            [posts addObject:[BSONDecoder decodeDictionaryWithDocument:doc]];
+        }
+    }
+    
+    return posts;
+}
+
+- (void)sm3darLoadPoints:(SM3DARController *)sm3dar
+{
+    NSMutableArray *points = [NSMutableArray array];
+    
+    for (NSDictionary *post in [self fetchAllPosts])
+    {
+        NSDictionary *locationData = [post objectForKey:@"coordinates"];
+        NSNumber *latitude = [locationData objectForKey:@"latitude"];
+        NSNumber *longitude = [locationData objectForKey:@"longitude"];
+        
+        if (latitude && longitude)
+        {
+            CLLocationCoordinate2D coord;
+            coord.longitude = [longitude doubleValue];
+            coord.latitude = [latitude doubleValue];
+            CLLocation *location = [[CLLocation alloc] initWithCoordinate:coord
+                                                                 altitude:(rand() % 100)
+                                                       horizontalAccuracy:-1
+                                                         verticalAccuracy:-1
+                                                                timestamp:nil];
+            
+            NSString *strImageUrl = [post objectForKey:@"imageUrl"];
+            NSURL *imageUrl = (strImageUrl ? [NSURL URLWithString:strImageUrl] : nil);
+
+            if (imageUrl)
+            {
+                SM3DARPointOfInterest *poi = [[SM3DARPointOfInterest alloc] initWithLocation:location
+                                                                                       title:[post objectForKey:@"name"]
+                                                                                    subtitle:nil
+                                                                                         url:imageUrl
+                                                                                  properties:post];
+                
+//                [points addObject:poi];
+                
+                [self.mapView addAnnotation:poi];
+                [self setPoiImage:poi];
+            }
+            
+        }
+        
+    }
+    
+//    [self.mapView addAnnotations:points];
+    [self.mapView zoomMapToFit];
+}
+
+- (void)setPoiImage:(SM3DARPointOfInterest*)poi
+{
+    __weak SM3DARIconMarkerView *v = (SM3DARIconMarkerView*)poi.view;
+    NSString *strImageUrl = [poi.properties objectForKey:@"imageUrl"];
+    NSURL *imageUrl = (strImageUrl ? [NSURL URLWithString:strImageUrl] : nil);
+    
+    if (imageUrl)
+    {
+        [v.icon setImageWithURL:imageUrl
+               placeholderImage:[UIImage imageNamed:@"3dar_marker_icon1.png"]
+                        options:SDWebImageRefreshCached
+                       progress:^(NSUInteger receivedSize, long long expectedSize) {
+                       }
+                      completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+                          NSLog(@"Done: %.0f, %.0f, ERROR: %@", image.size.width, image.size.height, error);
+                          
+                          CGRect f = v.icon.frame;
+                          f.size = CGSizeMake(200, 200);
+                          v.icon.frame = f;
+                      }];
+    }
+    
 }
 
 @end
